@@ -1,0 +1,7 @@
+{
+  "name": "Floral",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
