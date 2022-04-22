@@ -117,3 +117,10 @@ ion-note {
 ion-item.selected {
   --color: var(--ion-color-primary);
 }
+
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
