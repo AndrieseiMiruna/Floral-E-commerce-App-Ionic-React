@@ -1,7 +1,7 @@
-.loader{
+.loader {
   height: 100%;
   background-color: var(--dirtyWhite);
-  background-image: url('http://www.mirunaandriesei.ro/floral-app/loader.png');
+  background-image: url("../../../assets/images/loader.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,8 +11,6 @@
   display: flex;
 }
 
-
-
-ion-spinner{
-  color:var(--pink);
+ion-spinner {
+  color: var(--pink);
 }

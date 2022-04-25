@@ -51,3 +51,11 @@ ion-text p {
   position: absolute;
   z-index: 10000;
 }
+
+h2 {
+  color: var(--gray);
+  font-size: 14px;
+  font-weight: 600;
+  width: 100%;
+  text-align: left;
+}
