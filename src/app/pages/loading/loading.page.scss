@@ -1,11 +1,14 @@
-.flex-center{
+.loader{
   height: 100%;
   background-color: var(--dirtyWhite);
   background-image: url('http://www.mirunaandriesei.ro/floral-app/loader.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: flex;
 }
 
 

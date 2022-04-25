@@ -118,17 +118,26 @@ ion-item.selected {
   --color: var(--ion-color-primary);
 }
 
-
-.flex-center{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ion-menu {
+  background-color: var(--dirtyWhite);
 }
 
-h1{
-  color:var(--brown);
-  font-size: 30px;
-  margin:0;
+ion-list{
+  height: 100%;
+  background-image: url('http://www.mirunaandriesei.ro/floral-app/menu.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ion-note{width:100%;}
+
+
+ion-note:after {
+  content: "";
+  display: block;
+  border-bottom:1px solid #d7d8da;
+  padding: 10px 0;
 }
 
 
