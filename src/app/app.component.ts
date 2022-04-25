@@ -12,7 +12,7 @@ export class AppComponent {
     { title: 'Cart', url: '/folder/Archived', icon: 'cart' },
     { title: 'Your profile', url: '/folder/Trash', icon: 'heart' },
     { title: 'Contact', url: '/folder/Spam', icon: 'mail' },
-    { title: 'Privacy policy', url: '/folder/Spam', icon: 'warning' },
+    { title: 'Privacy policy', url: '/pages/policy', icon: 'warning' },
     { title: 'Logout', url: '/folder/Spam', icon: 'log-out' }
   ];
   constructor() {}
