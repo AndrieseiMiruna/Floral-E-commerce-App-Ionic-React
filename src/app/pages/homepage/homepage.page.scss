@@ -10,7 +10,7 @@
 .swiper-slide img {
   width: 300px;
   height: 300px;
-  object-fit: cover;
+  object-fit: contain;
   margin: 0 calc(50% - 150px);
   border-radius: 8px;
 }
@@ -46,4 +46,28 @@ p {
 .categoriesBtn {
   width: 100%;
   display: flex;
+}
+
+.productText p {
+  margin: 0;
+}
+
+ion-fab-button{
+  height:70px;
+  width:70px;
+}
+
+.cart-icon{
+  font-size:50px;
+}
+.cart-lenght{
+  position:absolute;
+  background-color:#fff;
+  right:10px;
+  bottom:10px;
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  color:var(--pink)
+
 }

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { BehaviorSubject } from 'rxjs';
+import { CartService } from './../../services/cart.service';
 
 @Component({
   selector: 'app-homepage',
@@ -6,7 +9,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./homepage.page.scss'],
 })
 export class HomepagePage implements OnInit {
-  constructor() {}
+  cart = [];
+  products =[];
+  cartItemCount: BehaviorSubject<number>;
+  constructor(private CartService: CartService, private ModalCtrl: ModalController) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.products = this.CartService.getProducts();
+    this.cart = this.CartService.getCart();
+    this.cartItemCount = this.CartService.getCartItemCount();
+  }
+
+  addCart(product){
+
+  }
+
+  openCart(){
+    
+  }
 }

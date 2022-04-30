@@ -29,41 +29,28 @@
   </div>
 
   <ion-slides>
-    <ion-slide>
+    <ion-slide *ngFor="let p of products">
       <div class="slide">
-        <img src="../../../assets/images/s4.jpg" />
+        <img src="../../../assets/images/products/{{p.picture}}" />
         <div class="productText">
-          <h2>Pink bouquet</h2>
-          <p>18 €</p>
+          <h2>{{ p.name }}</h2>
+          <p>{{ p.price | currency: 'USD' }}</p>
         </div>
         <div class="productAdd">
-          <button ion-button>+</button>
+          <button ion-button (click)="addToCart(p)">+</button>
         </div>
-      </div>
-    </ion-slide>
-
-    <ion-slide>
-      <div class="slide">
-        <img src="../../../assets/images/s2.jpg" />
-        <h2>Pink bouquet</h2>
-        <p>18€</p>
-      </div>
-    </ion-slide>
-
-    <ion-slide>
-      <div class="slide">
-        <img src="../../../assets/images/s3.jpg" />
-        <h2>Pink bouquet</h2>
-        <p>18E</p>
-      </div>
-    </ion-slide>
-
-    <ion-slide>
-      <div class="slide">
-        <img src="../../../assets/images/s1.jpg" />
-        <h2>Pink bouquet</h2>
-        <p>18E</p>
       </div>
     </ion-slide>
   </ion-slides>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click) = "openCart()" #cart>
+      <div class="cart-lenght">{{cartItemCount | async }}</div>
+      <ion-icon name="cart-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="end">
+    </ion-fab-list>
+  </ion-fab>
 </ion-content>
+
+
