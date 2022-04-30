@@ -7,25 +7,34 @@
 
 <ion-content fullscreen color="tertiary" class="ion-padding" scroll-y="false">
   <div class="categoriesBtn" color="primary">
-    <app-category-button
+    
+    <a routerLink="/products">
+      <app-category-button
       spanText="Flowers"
-      image="flower2.png"
-    ></app-category-button>
+      image="flower2.png">
+      </app-category-button>
+    </a>
 
+    <a routerLink="/products">
     <app-category-button
       spanText="Cards"
       image="cards.png"
     ></app-category-button>
+    </a>
 
+    <a routerLink="/products">
     <app-category-button
       spanText="Cards"
       image="candles.png"
     ></app-category-button>
+    </a>
 
+    <a routerLink="/products">
     <app-category-button
       spanText="Funeral"
       image="death-and-funeral.png"
     ></app-category-button>
+    </a>
   </div>
 
   <ion-slides>
@@ -37,20 +46,33 @@
           <p>{{ p.price | currency: 'USD' }}</p>
         </div>
         <div class="productAdd">
-          <button ion-button (click)="addToCart(p)">+</button>
+          <button ion-button>+</button>
         </div>
       </div>
     </ion-slide>
   </ion-slides>
 
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button (click) = "openCart()" #cart>
+    <ion-fab-button #cart>
       <div class="cart-lenght">{{cartItemCount | async }}</div>
       <ion-icon name="cart-outline"></ion-icon>
     </ion-fab-button>
     <ion-fab-list side="end">
     </ion-fab-list>
   </ion-fab>
+
+  <a routerLink="/about-us">
+  <ion-card color="transparent">
+    <ion-card-header>
+      <h1>About us</h1>
+    </ion-card-header>
+    <ion-card-content color="secondary">
+      We operate in Pihtiputaa in the same premises as Mononen's funeral service.
+      Our job description includes binding work
+      the sale of ...
+    </ion-card-content>
+  </ion-card>
+</a>
 </ion-content>
 
 

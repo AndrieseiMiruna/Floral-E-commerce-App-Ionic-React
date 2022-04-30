@@ -5,8 +5,9 @@ h1 {
   width: 100%;
 }
 
-ion-toolbar h1 {
+ion-toolbar h1, ion-toolbar p {
   padding-left: 20px;
+  color: var(--brown);
 }
 
 ion-item {
@@ -59,3 +60,6 @@ h2 {
   width: 100%;
   text-align: left;
 }
+
+
+a{text-decoration:none}

@@ -39,8 +39,8 @@ const routes: Routes = [
   {
     path: 'products',
     loadChildren: () =>
-      import('./pages/products/products.module').then(
-        (m) => m.ProductsPageModule
+      import('./pages/homepage/homepage.module').then(
+        (m) => m.HomepagePageModule
       ),
   },
   {
@@ -51,8 +51,12 @@ const routes: Routes = [
       ),
   },
   {
-    path: 'cart-modal',
-    loadChildren: () => import('./pages/cart-modal/cart-modal.module').then( m => m.CartModalPageModule)
+    path: 'your-profile',
+    loadChildren: () => import('./pages/your-profile/your-profile.module').then( m => m.YourProfilePageModule)
+  },
+  {
+    path: 'contact',
+    loadChildren: () => import('./pages/contact/contact.module').then( m => m.ContactPageModule)
   },
 ];
 

@@ -9,9 +9,9 @@ export class AppComponent {
     { title: 'HomePage', url: '/homepage', icon: 'home' },
     { title: 'About', url: '/about-us', icon: 'flower' },
     { title: 'Products', url: '/products', icon: 'gift' },
-    { title: 'Cart', url: '/folder/Archived', icon: 'cart' },
-    { title: 'Your profile', url: '/folder/Trash', icon: 'heart' },
-    { title: 'Contact', url: '/folder/Spam', icon: 'mail' },
+    { title: 'Cart', url: '/cart', icon: 'cart' },
+    { title: 'Your profile', url: '/your-profile', icon: 'heart' },
+    { title: 'Contact', url: '/contact', icon: 'mail' },
     { title: 'Privacy policy', url: '/pages/policy', icon: 'warning' },
     { title: 'Logout', url: '/login', icon: 'log-out' },
   ];

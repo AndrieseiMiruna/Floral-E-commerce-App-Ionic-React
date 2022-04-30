@@ -19,12 +19,4 @@ export class HomepagePage implements OnInit {
     this.cart = this.CartService.getCart();
     this.cartItemCount = this.CartService.getCartItemCount();
   }
-
-  addCart(product){
-
-  }
-
-  openCart(){
-    
-  }
 }
