@@ -58,6 +58,10 @@ const routes: Routes = [
     path: 'contact',
     loadChildren: () => import('./pages/contact/contact.module').then( m => m.ContactPageModule)
   },
+  {
+    path: 'flowers',
+    loadChildren: () => import('./pages/flowers/flowers.module').then( m => m.FlowersPageModule)
+  },
 ];
 
 @NgModule({

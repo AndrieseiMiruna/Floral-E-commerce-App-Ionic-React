@@ -10,7 +10,7 @@
 .swiper-slide img {
   width: 300px;
   height: 300px;
-  object-fit: contain;
+  object-fit: cover;
   margin: 0 calc(50% - 150px);
   border-radius: 8px;
 }
@@ -22,12 +22,15 @@ p {
   font-size: 22px;
 }
 
-.productAdd,
 .productText {
-  width: 50%;
+  width: 70%;
+  float: left;
+
+}
+.productAdd{
+  width: 20%;
   float: left;
 }
-
 .productAdd button {
   background-color: var(--pink);
   color: #fff;
