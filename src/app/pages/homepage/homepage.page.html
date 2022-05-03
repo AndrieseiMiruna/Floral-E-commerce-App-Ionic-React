@@ -7,33 +7,22 @@
 
 <ion-content fullscreen color="tertiary" class="ion-padding" scroll-y="false">
   <div class="categoriesBtn" color="primary">
-    
+
     <a routerLink="/flowers">
-      <app-category-button
-      spanText="Flowers"
-      image="flower2.png">
+      <app-category-button spanText="Flowers" image="flower2.png">
       </app-category-button>
     </a>
 
     <a routerLink="/products">
-    <app-category-button
-      spanText="Cards"
-      image="cards.png"
-    ></app-category-button>
+      <app-category-button spanText="Cards" image="cards.png"></app-category-button>
     </a>
 
     <a routerLink="/products">
-    <app-category-button
-      spanText="Cards"
-      image="candles.png"
-    ></app-category-button>
+      <app-category-button spanText="Cards" image="candles.png"></app-category-button>
     </a>
 
     <a routerLink="/products">
-    <app-category-button
-      spanText="Funeral"
-      image="death-and-funeral.png"
-    ></app-category-button>
+      <app-category-button spanText="Funeral" image="death-and-funeral.png"></app-category-button>
     </a>
   </div>
 
@@ -43,7 +32,7 @@
         <img src="../../../assets/images/products/{{p.picture}}" />
         <div class="productText">
           <h2>{{ p.name }}</h2>
-          <p>{{ p.price | currency: 'USD' }}</p>
+          <p>{{ p.price | currency: 'EUR' }}</p>
         </div>
         <div class="productAdd">
           <button ion-button>+</button>
@@ -62,17 +51,15 @@
   </ion-fab>
 
   <a routerLink="/about-us">
-  <ion-card color="transparent">
-    <ion-card-header>
-      <h1>About us</h1>
-    </ion-card-header>
-    <ion-card-content color="secondary">
-      We operate in Pihtiputaa in the same premises as Mononen's funeral service.
-      Our job description includes binding work
-      the sale of ...
-    </ion-card-content>
-  </ion-card>
-</a>
+    <ion-card color="transparent">
+      <ion-card-header>
+        <h1>About us</h1>
+      </ion-card-header>
+      <ion-card-content color="secondary">
+        We operate in Pihtiputaa in the same premises as Mononen's funeral service.
+        Our job description includes binding work
+        the sale of ...
+      </ion-card-content>
+    </ion-card>
+  </a>
 </ion-content>
-
-
